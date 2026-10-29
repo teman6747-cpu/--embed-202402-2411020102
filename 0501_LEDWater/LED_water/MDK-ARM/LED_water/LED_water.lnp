@@ -1,0 +1,24 @@
+--cpu Cortex-M4.fp
+"led_water\startup_stm32f407xx.o"
+"led_water\main.o"
+"led_water\gpio.o"
+"led_water\stm32f4xx_it.o"
+"led_water\stm32f4xx_hal_msp.o"
+"led_water\stm32f4xx_hal_rcc.o"
+"led_water\stm32f4xx_hal_rcc_ex.o"
+"led_water\stm32f4xx_hal_flash.o"
+"led_water\stm32f4xx_hal_flash_ex.o"
+"led_water\stm32f4xx_hal_flash_ramfunc.o"
+"led_water\stm32f4xx_hal_gpio.o"
+"led_water\stm32f4xx_hal_dma_ex.o"
+"led_water\stm32f4xx_hal_dma.o"
+"led_water\stm32f4xx_hal_pwr.o"
+"led_water\stm32f4xx_hal_pwr_ex.o"
+"led_water\stm32f4xx_hal_cortex.o"
+"led_water\stm32f4xx_hal.o"
+"led_water\stm32f4xx_hal_exti.o"
+"led_water\system_stm32f4xx.o"
+--strict --scatter "LED_water\LED_water.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED_water.map" -o LED_water\LED_water.axf
